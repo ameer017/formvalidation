@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+    color: green;
+}
+
+body {
+    background-color: wheat;
+    background-image: url(/jokeBg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 5rem 0;
+    border-radius: 10px;
+    box-shadow: -2px 5px 10px 2px;
+}
+
+.formContainer h1 {
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+.formContainer .username,
+.formContainer .email, 
+.formContainer .password,
+.formContainer .confirmPassword {
+    margin-top: .1em;
+}
+
+.formContainer .username > div,
+.formContainer .email > div, 
+.formContainer .password > div,
+.formContainer .confirmPassword > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.formDetails {
+    margin: 1rem 0;
+}
+
+.formDetails input {
+    width: 100%;
+    padding: .5rem;
+    border: 1.5px solid rgb(207, 199, 199);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: .5rem;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+input.greenBorder { 
+    border: 1.5px solid green;
+}
+
+input.redBorder { 
+    border: 1.5px solid red;
+}
+
+.successCheck {
+    color: green;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.errorCheck {
+    color: red;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.errorMessage {
+    margin-top: .5rem;
+    color: red;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+#btn {
+    width: 100%;
+    /* background-color: wheat; */
+    padding: 1rem;
+    /* border-radius: 5px; */
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: #fff;
+    font-weight: 600;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-image: url(/leaf.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 2px 2px 4px black;
+}
